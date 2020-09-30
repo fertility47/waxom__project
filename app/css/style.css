@@ -579,6 +579,9 @@ body{
     }
 
   /* /section our__project */
+
+  /* section video presentation
+  ======================================================== */
    .video_presentation{
         position: relative;
         display: flex;
@@ -625,6 +628,28 @@ body{
         text-align: center;
         max-width: 570px;
   }
+  .icon__play{
+      margin-bottom: 30px;
+      cursor: pointer;
+      position: relative;
+      z-index: 20;
+  }
+ 
+  .video__presentation-button::before{
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 50%;
+      transform: translate3d(-50%, -13%, 0);
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      opacity: 0.3;
+      background: #000;
+      border-radius: 50%;
+
+  }
 
   .video__presentation-title{
         font-size: 30px;
@@ -643,5 +668,43 @@ body{
         font-weight: 400;
         color: rgb(199, 178, 153);
   }
+  
+  /* /section video presentation */
+/* mobile__design
+=============================================================== */
+  .mobile__design {
+      width: 100%;
+      padding-top: 80px;
+}
+
+.mobile__design-inner {
+    display: flex;
+    align-items: center;
+    background: url(../images/mobile_design/iPhone.png) no-repeat left top / contain;
+    max-width: 100%;
+    min-height: 616px;
+    padding: 0 10px 0 430px
+}
+.mobile__design-info {
+    max-width: 700px;
+    margin-left: auto;
+}
+.mobile__design-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+.mobile__design-text {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.mobile__design-item {
+    background: url(../images/mobile_design/marker.png) no-repeat left center / contain;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+/* /mobile__design */
 
  
