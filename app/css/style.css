@@ -867,6 +867,9 @@ body{
     position: relative;
     
 }
+.read__more-link{
+    color: #c7b299;
+}
 
 .read__more::after{
     content: "";
@@ -877,7 +880,125 @@ body{
     border-left: 6px solid #c7b299;
     padding: 0;
 }
-.read__more-link{
+
+/* /recent post */
+
+/* section label
+========================================================= */
+.section__label {
+    background: url(../images/label/label_bg.jpg) no-repeat top center/ cover;
+    width: 100%;
+    padding: 135px 0;
+}
+
+.section__label-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* /section label */
+
+/* footer */
+.footer{
+    padding: 80px 0;
+    background: #191919;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__column{
+    width: 23%;
+}
+.footer__logo{
+    margin-bottom: 25px;
+}
+.footer__text{
+    line-height: 1.6;
+}
+
+.read__more-link.footer__link{
+    color: #fff;
+    font-weight: 400;
+}
+
+.read__more::after{
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -25px;
+    border: 6px solid transparent; 
+    border-left: 6px solid #c7b299;
+    padding: 0;
+}
+
+.footer__column-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+}
+.recent__post-info{
+    padding: 20px 0;
+    border-bottom: 1px solid #252525;
+}
+.post__info-text{
+    margin-bottom: 10px;
+}
+ 
+.recent__post-info:last-child{
+    border-bottom: none;
+}
+.recent__post-info:hover
+.date__link{
+    color: #fff;
+}
+.recent__post-info:hover
+.last__seen-link{
+    color: #fff;
+}
+
+.recent__post-info:hover
+.footer__text{
     color: #c7b299;
 }
-/* /recent post */
+
+.footer__text{
+    transition: color .2s linear;
+    color: #8c8c8c;
+}
+.footer__text-docor{
+    color: #059ec7;
+}
+.date__link{
+    transition: color .2s  linear;
+    color: #7e6e6e;
+}
+.last__seen{
+    margin-top: 10px;
+}
+.last__seen-link{
+    color: #8c8c8c;
+    transition: color .2s linear;
+}
+
+.date-text-decor{
+    color: #00bff3;
+}
+
+.dribbble__widget-galery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dribbble__widget-item {
+    width: 50%;
+    border: 5px solid #191919;
+}
+
+.dribbble__widget-img {
+    width: 100%;
+    display: block;
+}
+/* /footer */
+
