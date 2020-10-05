@@ -140,43 +140,100 @@ body{
 /* intro
 ======================================================= */
 .intro{
-    background:url(../images/intro/intro__bg.jpg) no-repeat center top /      cover;
-    display: flex;
     width: 100%;
     height: 100vh;
-    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+/* slider
+=================================================================================== */
+.intro__slider{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.intro__slider-item{
     position: relative;
 }
-
-.intro::before{
-    content: "";
+.intro__slider-item::after{
     position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .6;
+}
+.intro__slider-item.first::after{
+    opacity: 0;
+}
+.intro__slider-item.first{
+    background: url(../images/intro/intro__bg.jpg) no-repeat center top /cover;
+    height: 100vh;
+}
+.intro__slider-item.second{
+    background: url(../images/intro/1.jpg) no-repeat center top /cover;
+    height: 100vh;
+}
+.intro__slider-item.third{
+    background: url(../images/intro/2.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.slick-arrow{
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev{
     left: 5%;
     top: 50%;
-    background: url(../images/intro/left__arrow.png);
-    z-index: 10;
-    height: 73px;
-    width: 40px;
-    transform: translateY(-50%);
-    cursor: pointer;
 }
-.intro::after{
-    content: "";
-    position: absolute;
+
+.slick-prev::after{
+        content: "";
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        background: url(../images/intro/left__arrow.png);
+        z-index: 10;
+        height: 73px;
+        width: 40px;
+        transform: translateY(-50%);
+        cursor: pointer;
+}
+.slick-next{
     right: 5%;
     top: 50%;
-    background: url(../images/intro/right__arrow.png);
     z-index: 10;
-    height: 73px;
-    width: 40px;
-    transform: translateY(-50%);
-    cursor: pointer;
 }
 
-
+.slick-next::after{
+        content: "";
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        background: url(../images/intro/right__arrow.png);
+        z-index: 10;
+        height: 73px;
+        width: 40px;
+        transform: translateY(-50%);
+        cursor: pointer;
+}
+/* /slider */
 
 .intro__inner{
-    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 10;
     max-width: 620px;
     text-align: center;
     color: #ffffff;
