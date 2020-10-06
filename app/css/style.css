@@ -264,7 +264,7 @@ body{
     transform: translate(-50%, -50%);
     position: absolute;
     z-index: 10;
-    max-width: 520px;
+    max-width: 620px;
     text-align: center;
     color: #ffffff;
 }
@@ -573,7 +573,7 @@ body{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* overflow: hidden; */
+        overflow: hidden;
        
     }
 
